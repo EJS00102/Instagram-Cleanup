@@ -7,7 +7,7 @@ class InstagramBot():
         self.browserProfile = webdriver.ChromeOptions()
         self.browserProfile.add_experimental_option('prefs', {'intl.accept_languages': 'en,en_US'})
         self.browser = webdriver.Chrome('chromedriver.exe', chrome_options=self.browserProfile)
-        self.username = email
+        self.username = username
         self.password = password
         self.browser.delete_all_cookies()
 
@@ -109,7 +109,7 @@ class InstagramBot():
 
                 time.sleep(pause*3)
 
-bot = InstagramBot('demper.silencers', 'DEMPER2019SOCIAL')
+bot = InstagramBot('springer_gear', 'SPRINGER2019SOCIAL')
 bot.signIn()
 #bot.followWithUsername('therock')
 #bot.unfollowWithUsername('therock')
